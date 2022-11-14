@@ -1,0 +1,18 @@
+.header {
+  &__inner {
+    background-color: var(--blue-color);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+}
+
