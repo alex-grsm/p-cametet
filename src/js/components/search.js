@@ -39,6 +39,15 @@ const search = () => {
   inputSearch.addEventListener('input', function () {
     inputSearch.value.length > 2 ? resultSearch.classList.add('active') : resultSearch.classList.remove('active');
   });
+
+  window.addEventListener('scroll', (e) => {
+    // console.log(document.documentElement.scrollTop);
+    if (document.documentElement.scrollTop > 550) {
+      boxSearch.classList.remove('active');
+      inputSearch.blur();
+      resultSearch.classList.remove('active');
+    }
+  });
 };
 
 export default search;
