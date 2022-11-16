@@ -2,8 +2,8 @@ const search = () => {
   const boxSearch = document.querySelector('.search-box'),
     btnSearch = document.querySelector('.btn-search'),
     inputSearch = document.querySelector('.input-search'),
-    // closeSearch = document.querySelector('.search-close'),
-    resultSearch = document.querySelector('.search-result');
+    resultSearch = document.querySelector('.search-result'),
+    pageBody = document.querySelector('.page__body');
 
   const toggleSearch = () => {
     boxSearch.classList.toggle('active');
@@ -11,9 +11,12 @@ const search = () => {
       inputSearch.focus();
     } else {
       inputSearch.blur();
+      inputSearch.value = '';
       resultSearch.classList.remove('active');
+      pageBody.classList.remove('openSearchResult');
     }
   };
+
 
   btnSearch.addEventListener('click', () => {
     toggleSearch();
@@ -37,15 +40,22 @@ const search = () => {
   });
 
   inputSearch.addEventListener('input', function () {
-    inputSearch.value.length > 2 ? resultSearch.classList.add('active') : resultSearch.classList.remove('active');
+    if (inputSearch.value.length > 2) {
+      resultSearch.classList.add('active');
+      pageBody.classList.add('openSearchResult');
+    } else {
+      resultSearch.classList.remove('active');
+      pageBody.classList.remove('openSearchResult');
+    }
   });
 
-  window.addEventListener('scroll', (e) => {
+  window.addEventListener('scroll', e => {
     // console.log(document.documentElement.scrollTop);
     if (document.documentElement.scrollTop > 550) {
       boxSearch.classList.remove('active');
       inputSearch.blur();
       resultSearch.classList.remove('active');
+      pageBody.classList.remove('openSearchResult');
     }
   });
 };

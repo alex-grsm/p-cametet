@@ -2,6 +2,7 @@ import langDropDown from './components/langdropdown';
 import superMenu from './components/superMenu';
 import search from './components/search';
 import heroSwiper from './components/heroswiper';
+import brandSwiper from './components/brandswiper';
 
 window.addEventListener('DOMContentLoaded', () => {
   // 'use strict';
@@ -10,4 +11,5 @@ window.addEventListener('DOMContentLoaded', () => {
   superMenu();
   search();
   heroSwiper();
+  brandSwiper();
 });

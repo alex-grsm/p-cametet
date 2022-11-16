@@ -19,6 +19,7 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  color: #333;
 }
 
 img {
@@ -117,15 +118,80 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--blue-color);
+  background-color: #46587A;
   background-image: -webkit-linear-gradient(
     45deg,
-    rgba(var(--blue-color), 0.2) 25%,
+    rgba(#46587A, 0.2) 25%,
     transparent 25%,
     transparent 50%,
-    rgba(var(--blue-color), 0.2) 50%,
-    rgba(var(--blue-color), 0.2) 75%,
+    rgba(#46587A, 0.2) 50%,
+    rgba(#46587A, 0.2) 75%,
     transparent 75%,
     transparent
   );
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  span {
+    padding-left: 15px;
+  }
+}
+
+section {
+  position: relative;
+}
+
+.main {
+  padding-top: 50px;
+  background-image: url('../img/main-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 0 19%;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 0;
+    // width: 2720px;
+    // height: 2234px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg.webp');
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(#46587A, .7);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+.page__body {
+  &.openSearchResult {
+    .main {
+      &:after {
+        z-index: 5;
+        opacity: 1;
+        height: 100%;
+      }
+    }
+  }
 }

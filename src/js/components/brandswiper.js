@@ -1,9 +1,9 @@
-import Swiper, { Pagination, EffectCreative, Keyboard, Autoplay } from 'swiper';
-Swiper.use([Pagination, EffectCreative, Keyboard, Autoplay]);
+import Swiper, { Keyboard, Autoplay } from 'swiper';
+Swiper.use([Keyboard, Autoplay]);
 
-const heroSwiper = () => {
+const brandSwiper = () => {
 
-  const swiperHero = new Swiper('.hero__swiper', {
+  const swiperBrand = new Swiper('.brand__swiper', {
     grabCursor: true,
     speed: 500,
     effect: 'creative',
@@ -27,10 +27,10 @@ const heroSwiper = () => {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true
+      clickable: true,
     },
   });
 
 };
 
-export default heroSwiper;
+export default brandSwiper;

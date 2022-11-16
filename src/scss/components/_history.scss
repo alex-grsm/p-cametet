@@ -1,0 +1,17 @@
+.history {
+  margin-bottom: 80px;
+  &__container {
+    max-width: 880px;
+  }
+
+  &__head {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    p {
+      margin-top: 0;
+      @include mb(30px);
+    }
+  }
+}
