@@ -22,3 +22,41 @@
   }
 }
 
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbfb;
+  &-link {
+    min-width: 160px;
+    max-width: 160px;
+    display: block;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 500;
+    color: #333;
+    padding: 16px;
+    text-align: center;
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: #d2d6de;
+    background-color: #fbfbfb;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      background-color: #ffffff;
+      color: var(--red-color);
+    }
+    > span {
+      display: block;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+.main {
+  padding-top: 50px;
+  @include bg-cover;
+  background-image: url('../img/main-bg.jpg');
+}
