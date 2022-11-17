@@ -10,7 +10,6 @@ const brandSwiper = () => {
     slidesPerView: 5,
     spaceBetween: 30,
     loop: true,
-    // centeredSlides: true,
     keyboard: {
       enabled: true,
       onlyInViewport: false,
