@@ -1,0 +1,17 @@
+.brand {
+  margin-bottom: 80px;
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+
+  &__swiper {
+    &-slide {
+    }
+    &-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

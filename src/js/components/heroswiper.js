@@ -5,6 +5,7 @@ const heroSwiper = () => {
 
   const swiperHero = new Swiper('.hero__swiper', {
     grabCursor: true,
+    loop: true,
     speed: 500,
     effect: 'creative',
     creativeEffect: {

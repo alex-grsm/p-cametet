@@ -5,7 +5,7 @@ import heroSwiper from './components/heroswiper';
 import brandSwiper from './components/brandswiper';
 
 window.addEventListener('DOMContentLoaded', () => {
-  // 'use strict';
+  'use strict';
 
   langDropDown();
   superMenu();

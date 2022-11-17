@@ -1,33 +1,23 @@
-import Swiper, { Keyboard, Autoplay } from 'swiper';
-Swiper.use([Keyboard, Autoplay]);
+import Swiper, { Keyboard, Autoplay, FreeMode } from 'swiper';
+Swiper.use([Keyboard, Autoplay, FreeMode]);
 
 const brandSwiper = () => {
 
   const swiperBrand = new Swiper('.brand__swiper', {
     grabCursor: true,
-    speed: 500,
-    effect: 'creative',
-    creativeEffect: {
-      prev: {
-        shadow: true,
-        origin: 'left center',
-        translate: ['-5%', 0, -200],
-        rotate: [0, 50, 0],
-      },
-      next: {
-        origin: 'right center',
-        translate: ['5%', 0, -200],
-        rotate: [0, -50, 0],
-      },
-    },
+    speed: 5000,
+    freeMode: true,
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    // centeredSlides: true,
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false
     },
   });
 
