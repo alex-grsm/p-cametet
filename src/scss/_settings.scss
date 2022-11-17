@@ -62,13 +62,18 @@ p {
   appearance: none;
   border: none;
   border-radius: 0;
-  background-color: #fff;
+  background-color: transparent !important;
+  outline: none !important;
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
   &::-webkit-search-results-button,
   &::-webkit-search-results-decoration {
     display: none;
+  }
+
+  &::placeholder {
+    color: #fff;
   }
 }
 
@@ -122,14 +127,14 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #46587A;
+  background-color: #46587a;
   background-image: -webkit-linear-gradient(
     45deg,
-    rgba(#46587A, 0.2) 25%,
+    rgba(#46587a, 0.2) 25%,
     transparent 25%,
     transparent 50%,
-    rgba(#46587A, 0.2) 50%,
-    rgba(#46587A, 0.2) 75%,
+    rgba(#46587a, 0.2) 50%,
+    rgba(#46587a, 0.2) 75%,
     transparent 75%,
     transparent
   );
@@ -180,7 +185,7 @@ section {
     right: 0;
     width: 100%;
     height: 0%;
-    background-color: rgba(#46587A, .7);
+    background-color: rgba(#46587a, 0.7);
     z-index: -1;
     opacity: 0;
     pointer-events: none;

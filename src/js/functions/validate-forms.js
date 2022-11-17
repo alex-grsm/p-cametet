@@ -40,6 +40,18 @@ export const validateForms = (selector, rules, afterSend) => {
       .addField(item.ruleSelector, item.rules);
   }
 
+  // document.querySelector('#change-lang-btn-en').addEventListener('click', () => {
+  //   validation.setCurrentLocale();
+  // });
+
+  // document.querySelector('#change-lang-btn-ru').addEventListener('click', () => {
+  //   validation.setCurrentLocale('ru');
+  // });
+
+  document.querySelector('#change-lang-btn-es').addEventListener('click', () => {
+    validation.setCurrentLocale('es');
+  });
+
   validation.onSuccess((ev) => {
     let formData = new FormData(ev.target);
 
@@ -60,6 +72,6 @@ export const validateForms = (selector, rules, afterSend) => {
     xhr.send(formData);
 
     ev.target.reset();
-  })
+  });
 
 };

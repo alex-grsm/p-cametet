@@ -3,6 +3,7 @@ import superMenu from './components/superMenu';
 import search from './components/search';
 import heroSwiper from './components/heroswiper';
 import brandSwiper from './components/brandswiper';
+import './components/validation';
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
   search();
   heroSwiper();
   brandSwiper();
+
 });
