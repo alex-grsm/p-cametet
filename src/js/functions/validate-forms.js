@@ -48,9 +48,9 @@ export const validateForms = (selector, rules, afterSend) => {
   //   validation.setCurrentLocale('ru');
   // });
 
-  document.querySelector('#change-lang-btn-es').addEventListener('click', () => {
-    validation.setCurrentLocale('es');
-  });
+  // document.querySelector('#change-lang-btn-es').addEventListener('click', () => {
+  //   validation.setCurrentLocale('es');
+  // });
 
   validation.onSuccess((ev) => {
     let formData = new FormData(ev.target);

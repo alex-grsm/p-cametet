@@ -1,0 +1,30 @@
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1920px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    .copyright {
+      margin-left: 15px;
+    }
+  }
+
+  &__scrollup {
+  }
+}
+
+.pageup {
+  display: flex;
+  align-items: center;
+  span {
+    text-transform: uppercase;
+    color: var(--blue-color);
+    font-weight: 700;
+    padding-left: 16px;
+  }
+}
