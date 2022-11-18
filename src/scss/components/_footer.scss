@@ -1,9 +1,11 @@
 .footer {
+  background-color: #fff;
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1920px;
+    min-height: 80px;
   }
 
   &__box {
