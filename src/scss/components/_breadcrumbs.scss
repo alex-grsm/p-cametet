@@ -1,18 +1,20 @@
-.breadcrumbs-wrap {
-}
-
 .breadcrumbs {
   display: inline-flex;
   align-items: center;
   background-color: #fff;
-  padding: 16px;
+  padding: 15px;
   border-radius: 13px;
   li {
     font-size: 16px;
+    line-height: 1;
+    .image {
+      position: relative;
+      top: 2px;
+    }
     + li {
       &:before {
         content: '/\00a0';
-        padding: 0 10px;
+        padding: 0 15px;
         color: #8296a5;
         position: relative;
         left: 2px;
@@ -20,10 +22,13 @@
       }
     }
     a {
-      text-transform: lowercase;
       color: #333;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 1;
     }
+  }
+
+  &__container {
+    margin-bottom: 50px;
   }
 }

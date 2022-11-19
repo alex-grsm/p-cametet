@@ -92,5 +92,8 @@ const afterForm = () => {
   // window.location.replace("url");
 };
 
-validateForms('#contact__form', rules, afterForm);
+if (document.querySelector('#contact__form')) {
+  validateForms('#contact__form', rules, afterForm);
+}
+
 // validateForms('#modal-callback form', rules2, afterForm);

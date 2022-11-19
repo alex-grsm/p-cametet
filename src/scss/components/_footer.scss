@@ -1,5 +1,6 @@
 .footer {
   background-color: #fff;
+  padding: 0 80px;
   &__container {
     display: flex;
     align-items: center;
@@ -17,6 +18,13 @@
   }
 
   &__scrollup {
+  }
+
+  .copyright {
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--blue-color);
   }
 }
 

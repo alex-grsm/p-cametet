@@ -1,0 +1,58 @@
+.brands-catalog {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+    grid-row: 1 span;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 13px 33px -5px rgba(0, 0, 0, 0.13);
+    border-radius: 13px;
+    display: block;
+    transition: all 0.25s ease-in-out;
+    &-img {
+      margin-bottom: 15px;
+      min-height: 214px;
+      max-height: 214px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      overflow: hidden;
+      .image {
+        min-height: 214px;
+        width: 100%;
+      }
+    }
+    &-name {
+      position: relative;
+      padding: 7px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      border-radius: 8px;
+      transition: all 0.25s ease-in-out;
+      span {
+        color: var(--blue-color);
+      }
+      .name-icon {
+        width: 10px;
+        height: 10px;
+        transform: rotate(-90deg);
+        fill: var(--blue-color);
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 13px 33px -5px rgba(0, 0, 0, 0.33);
+      .brands-catalog__item-name {
+        background-color: #f0f6ff;
+      }
+    }
+  }
+}
