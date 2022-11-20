@@ -1,0 +1,104 @@
+.products-catalog {
+  margin-bottom: 150px;
+  overflow: hidden;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+    grid-row: 1 span;
+    background-color: #fff;
+    box-shadow: 0px 13px 33px -5px rgba(0, 0, 0, 0.13);
+    border-radius: 13px;
+    display: block;
+    padding: 15px;
+    transition: all 0.25s ease-in-out;
+    &:nth-child(n + 13) {
+      display: none;
+    }
+    &.is-visible {
+      display: block;
+    }
+    &-head {
+      margin-bottom: 8px;
+      h3 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--blue-color);
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--blue-color);
+      margin-bottom: 15px;
+    }
+
+    &-img {
+      max-height: 262px;
+      overflow: hidden;
+      border-radius: 13px;
+      margin-bottom: 15px;
+      .image {
+        width: 100%;
+        max-height: 262px;
+        min-height: 216px;
+        border-radius: 13px;
+        transform: scale();
+        transition: all 0.25s ease-in-out;
+      }
+    }
+
+    &-brand {
+      text-align: center;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--blue-color);
+    }
+
+    &:hover {
+      box-shadow: 0px 13px 33px -5px rgba(0, 0, 0, 0.33);
+      .products-catalog__item-img {
+        .image {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.show-more {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 13px;
+  padding: 16px;
+  background-color: #F0F6FF;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  .image {
+    margin-right: 8px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover {
+    background-color: darken(#F0F6FF, 4%);
+    .image {
+      transform: rotate(-180deg);
+    }
+  }
+}

@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "graph-modal": "^1.0.6",
     "graph-tabs": "^1.0.2",

@@ -6,6 +6,7 @@ import search from './components/search';
 import heroSwiper from './components/heroswiper';
 import brandSwiper from './components/brandswiper';
 import scrolling from './components/scrolling';
+import showMoreBtn from './components/show-more';
 import './components/validation';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   heroSwiper();
   brandSwiper();
   scrolling('.pageup');
+  showMoreBtn();
 
 
   /** Current year */

@@ -7,6 +7,10 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+
   // colors
   --blue-color: #46587A;
   --red-color: #ED1C24;
