@@ -83,23 +83,3 @@
   }
 }
 
-.show-more {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 13px;
-  padding: 16px;
-  background-color: #F0F6FF;
-  transition: all 0.25s ease-in-out;
-  cursor: pointer;
-  .image {
-    margin-right: 8px;
-    transition: all 0.25s ease-in-out;
-  }
-
-  &:hover {
-    background-color: darken(#F0F6FF, 4%);
-    .image {
-      transform: rotate(-180deg);
-    }
-  }
-}

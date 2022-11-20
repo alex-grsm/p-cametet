@@ -1,0 +1,120 @@
+.product-card {
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  &__inner {
+    background-color: #fff;
+    padding: 32px;
+    padding-right: 62px;
+    border-radius: 13px;
+    display: flex;
+  }
+
+  &__slider {
+    max-width: 400px;
+    min-width: 400px;
+    margin-right: 64px;
+  }
+
+  &__swiper {
+    margin-bottom: 15px;
+    .swiper-slide {
+      border-radius: 13px;
+      overflow: hidden;
+      background-color: #fff;
+      .image {
+        border-radius: 13px;
+      }
+    }
+  }
+
+  &__swiperThumbs {
+    padding-right: 2px;
+    .swiper-slide {
+      background-color: #fff;
+      .image {
+        border-radius: 13px;
+        border: 1px inset transparent;
+        transition: all 0.5s ease-in-out;
+      }
+      &.swiper-slide-thumb-active {
+        .image {
+          border: 1px inset var(--blue-color);
+        }
+      }
+    }
+  }
+
+  &__warning {
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--blue-color);
+    margin-top: 15px;
+  }
+
+  &__content {
+    flex: 1;
+    .h2 {
+      color: var(--blue-color);
+      text-transform: none;
+      margin-bottom: 8px;
+    }
+
+    .subh {
+      display: flex;
+      margin-bottom: 16px;
+      > span {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--blue-color);
+        @include mr(16px);
+      }
+    }
+
+    .feature-list {
+      margin-bottom: 16px;
+      li {
+        @include mb(8px);
+        color: #333333;
+        > strong {
+          font-weight: 500;
+          line-height: 20px;
+          color: var(--blue-color);
+          padding-right: 15px;
+        }
+        > ul {
+          margin-top: 8px;
+          padding-left: 20px;
+          li {
+            list-style: disc;
+            color: #333;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .btns {
+      display: grid;
+      gap: 0 15px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 16px;
+      .btn {
+        width: 100%;
+      }
+    }
+
+    .descr {
+      line-height: 20px;
+      @include mb(16px);
+      > strong {
+        color: var(--blue-color);
+        margin-bottom: 8px;
+        display: block;
+      }
+      > p {
+        color: #333;
+      }
+    }
+  }
+}
