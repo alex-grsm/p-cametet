@@ -125,28 +125,80 @@
           </li>
         </ul>
         <div class="btns">
-          <a href="#" class="btn-reset btn wiggle-anime">
+          <button id="btnQuestion" class="btn-reset btn wiggle-anime" data-graph-path="contactModal" data-graph-animation="fadeInUp">
             <img loading="lazy" src="/img/icon-mail.svg" class="image mr-8" width="21" height="16" alt="Cametet">
             <span>Задати питання</span>
-          </a>
-          <a href="#" class="btn-reset btn snake-anime">
+          </button>
+          <button id="btnCallback" class="btn-reset btn snake-anime" data-graph-path="contactModal" data-graph-animation="fadeInUp">
             <img loading="lazy" src="/img/icon-phone.svg" class="image mr-8" width="25" height="24" alt="Cametet">
             <span>Замовити дзвінок</span>
+          </button>
           </a>
-          </a>
-          <a href="#" class="btn-reset btn blue-bg pulse-anime">
+          <button class="btn-reset btn blue-bg pulse-anime">
             <img loading="lazy" src="/img/icon-cart.svg" class="image mr-8" width="25" height="24" alt="Cametet">
             <span>Buy</span>
-          </a>
+          </button>
         </div>
         <div class="descr">
           <strong>Будова:</strong>
-          <p>2 ремені(ів) класичного профілю HC об'єднані за допомогою тонкої гумово-тканинної пластини у єдиний багатоклиновий ремінь методом спільної вулканізації.</p>
+          <p>2 ремені(ів) класичного профілю HC об'єднані за допомогою тонкої гумово-тканинної пластини у єдиний
+            багатоклиновий ремінь методом спільної вулканізації.</p>
         </div>
         <div class="descr">
           <strong>Особливості:</strong>
-          <p>Виконання GATES AGRI.Високоякісні брендові ремені розроблені з урахуванням специфічних вимог аграрного сектору економіки.</p>
+          <p>Виконання GATES AGRI.Високоякісні брендові ремені розроблені з урахуванням специфічних вимог аграрного
+            сектору економіки.</p>
         </div>
       </div>
 
 </section>
+
+
+<!-- modal -->
+<div id="contact-modal" class="graph-modal contact-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="contactModal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="contact__head">
+        <h2 class="h2">
+          <img loading="lazy" src="/img/logo-solo.svg" class="image" width="56" height="56" alt="Cemetet">
+          <span>ЗАДАЙТЕ ПИТАННЯ</span>
+        </h2>
+        <div class="h-sub">Ми&nbsp;постараємося відповісти максимально швидко</div>
+      </div>
+      <div class="contact__content">
+        <form action="" method="POST" class="contact__form" id="contact__form">
+
+          <label class="form-label">
+            <span>ім’я+прізвище</span>
+            <input class="input-reset input input-name" type="text" name="name" placeholder="...">
+          </label>
+          <label class="form-label">
+            <span>Введите phone</span>
+            <input class="input-reset input input-tel" type="tel" name="phone" placeholder="...">
+          </label>
+          <label class="form-label">
+            <span>Введите email</span>
+            <input class="input-reset input input-email" type="email" name="email" placeholder="...">
+          </label>
+          <label class="form-label">
+            <span>компанія</span>
+            <input class="input-reset input input-company" type="text" name="company" placeholder="...">
+          </label>
+          <label class="form-label">
+            <span>ваше питання</span>
+            <textarea class="input-reset input input-message" type="text" name="message" placeholder="..."></textarea>
+          </label>
+
+          <div class="form-btn">
+            <button class="btn-reset btn white-bg wiggle-anime" type="submit">
+              <span>Надіслати</span>
+              <img loading="lazy" src="/img/ico-send.svg" class="image ml-8" width="24" height="24" alt="Cametet">
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

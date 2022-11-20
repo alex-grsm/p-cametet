@@ -3,11 +3,12 @@ import langDropDown from './components/langdropdown';
 import superMenu from './components/superMenu';
 import search from './components/search';
 import heroSwiper from './components/heroswiper';
-import productЫwiper from './components/productswiper';
+import productSwiper from './components/productswiper';
 import brandSwiper from './components/brandswiper';
 import scrolling from './components/scrolling';
 import showMoreBtn from './components/show-more';
 import './components/validation';
+import './components/modals';
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
@@ -17,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   superMenu();
   search();
   heroSwiper();
-  productЫwiper();
+  productSwiper();
   brandSwiper();
   scrolling('.pageup');
   showMoreBtn();

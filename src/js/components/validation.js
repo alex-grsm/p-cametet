@@ -57,18 +57,17 @@ const rules = [
       }
     ]
   },
-  // {
-  //   ruleSelector: '.input-tel',
-  //   tel: true,
-  //   telError: 'Введіть правильний телефон',
-  //   rules: [
-  //     {
-  //       rule: 'required',
-  //       value: true,
-  //       errorMessage: 'Заповніть телефон'
-  //     }
-  //   ]
-  // },
+  {
+    ruleSelector: '.input-tel',
+    tel: true,
+    telError: 'Введіть правильний телефон',
+    rules: [
+      {
+        rule: 'required',
+        errorMessage: 'Заповніть телефон'
+      }
+    ]
+  },
 ];
 
 // const rules2 = [

@@ -12,7 +12,7 @@ const scrolling = upSelector => {
   // });
 
   // Scrolling with requestAnimationFrame
-  let links = document.querySelectorAll('[href^="#"]'),
+  let links = document.querySelectorAll('.scrolling'),
       speed = 0.25;
 
   links.forEach(link => {

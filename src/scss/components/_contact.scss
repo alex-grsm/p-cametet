@@ -95,16 +95,6 @@
       margin-left: auto;
     }
   }
-
-  .just-validate-error-label {
-    color: var(--red-color) !important;
-    position: absolute;
-    bottom: -20px;
-    width: 50%;
-    right: 0;
-    font-size: 14px;
-    font-weight: 600;
-  }
 }
 
 .input {
@@ -117,8 +107,17 @@
   width: 50%;
   // transition: all .25s ease-in-out;
   &.just-validate-error-field {
-    border-bottom: 2px solid var(--red-color);
+    border-bottom: 1px solid var(--red-color);
   }
 }
 
+.just-validate-error-label {
+  color: var(--red-color) !important;
+  position: absolute;
+  bottom: -20px;
+  width: 50%;
+  right: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
 

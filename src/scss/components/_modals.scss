@@ -1,0 +1,38 @@
+.contact-modal {
+  background-color: rgba(70, 88, 122, 0.7);
+  .graph-modal__container {
+    padding: 32px;
+  }
+
+  .graph-modal__close {
+    right: 32px;
+    top: 32px;
+    background-image: url('../img/icon-close.svg');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+  }
+
+  .contact__head {
+    .h2, .h-sub {
+      color: var(--blue-color);
+    }
+  }
+
+  .contact__form .form-label span {
+    color: var(--blue-color);
+  }
+
+  .input {
+    border-color: var(--blue-color);
+    color: var(--blue-color);;
+    &::placeholder {
+      color: var(--blue-color);
+    }
+  }
+
+  .btn {
+    border: 1px solid var(--blue-color);
+    padding: 15px;
+  }
+}
