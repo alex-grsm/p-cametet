@@ -1,12 +1,27 @@
 <header class="header animated faster fadeIn" id="header">
   <div class="header__inner">
     <div class="container">
+
       <div class="header__top">
 
         <div class="header__box">
-          <a href="/" class="header__logo">
+          <a href="/" class="header__logo header__logo--desk">
             <img loading="lazy" src="/img/logo.svg" class="image" width="213" height="56" alt="Cametet">
           </a>
+          <a href="/" class="header__logo header__logo--mobile">
+            <img loading="lazy" src="/img/logo-mobile.svg" class="image" width="40" height="40" alt="Cametet">
+          </a>
+
+          <a href="#mobmenu" id="openMobMenu">
+            <svg class="burger-btn" width="30" height="30" viewBox="0 0 40 26"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
+              <rect class="burger-btn--2" width="40" height="6" y="10" rx="3" ry="3" />
+              <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
+            </svg>
+          </a>
+
+          @include('mobile-menu.html')
 
           <nav class="nav main-nav">
             <ul class="nav__list list-reset sf-menu sf-arrows">

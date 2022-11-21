@@ -7,8 +7,12 @@ import productSwiper from './components/productswiper';
 import brandSwiper from './components/brandswiper';
 import scrolling from './components/scrolling';
 import showMoreBtn from './components/show-more';
+import mobileMenu from './components/mobmenu';
 import './components/validation';
 import './components/modals';
+
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
@@ -22,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   brandSwiper();
   scrolling('.pageup');
   showMoreBtn();
+  mobileMenu();
 
   /** Current year */
   document.querySelector('#year').innerHTML = new Date().getFullYear();

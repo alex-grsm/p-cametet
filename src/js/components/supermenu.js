@@ -19,16 +19,21 @@ import '../vendor/jquery.hoverIntent.min.js';
 
 const superMenu = () => {
 
-  $(".main-nav .sf-menu").superfish({
-    cssArrows: false,
-    hoverClass: 'sfHover',
-    popUpSelector: 'ul.sub-menu',
-    animation: {opacity:'show', height:'show'},
-    speed: 'fast',
-    delay: 300,
-  });
+  // >= 992px
+	if (window.matchMedia('(min-width: 992px)').matches) {
 
-  $('.sf-with-ul').append('<svg class="sf-arrow"><use xlink:href="img/sprite.svg#angle-down"></use></svg>');
+    $(".main-nav .sf-menu").superfish({
+      cssArrows: false,
+      hoverClass: 'sfHover',
+      popUpSelector: 'ul.sub-menu',
+      animation: {opacity:'show', height:'show'},
+      speed: 'fast',
+      delay: 300,
+    });
+
+    $('.sf-with-ul').append('<svg class="sf-arrow"><use xlink:href="img/sprite.svg#angle-down"></use></svg>');
+
+	}
 
 };
 

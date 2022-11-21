@@ -20,6 +20,18 @@
 
   &__logo {
     margin-right: 100px;
+    &--desk {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+    &--mobile {
+      display: none;
+      @media (max-width: 766.99px) {
+        display: block;
+      }
+    }
   }
 }
 
