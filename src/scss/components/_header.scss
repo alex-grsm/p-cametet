@@ -11,38 +11,58 @@
     // padding: 16px 0;
     height: 104px;
     position: relative;
+
+    @media (max-width: 767.98px) {
+      height: 80px;
+    }
   }
 
   &__box {
     display: flex;
     align-items: center;
+    &--right {
+      @media (max-width: 767.98px) {
+        flex-direction: row-reverse;
+      }
+    }
   }
 
   &__logo {
-    margin-right: 100px;
     &--desk {
       display: none;
+      margin-right: 100px;
       @media (min-width: 768px) {
         display: block;
       }
     }
     &--mobile {
       display: none;
-      @media (max-width: 766.99px) {
+      margin-right: 32px;
+      @media (max-width: 766.98px) {
         display: block;
       }
     }
   }
 }
 
+.brands-wrap {
+  background-color: #fbfbfb;
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+}
 .brands {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fbfbfb;
+  @media (max-width: 1399.98px) {
+    padding: 0;
+  }
   &-link {
-    min-width: 160px;
-    max-width: 160px;
+    // min-width: 160px;
+    // min-width: 160px;
+    min-width: 12.5%;
+    max-width: 12.5%;
     display: block;
     font-size: 32px;
     line-height: 39px;
@@ -55,6 +75,9 @@
     border-color: #d2d6de;
     background-color: #fbfbfb;
     transition: all 0.25s ease-in-out;
+    @media (max-width: 1199.98px) {
+      padding: 10px;
+    }
     &:hover,
     &.active {
       background-color: #ffffff;
@@ -65,6 +88,13 @@
       font-size: 16px;
       line-height: 20px;
       font-weight: 400;
+      @media (max-width: 1199.98px) {
+        font-size: 14px;
+      }
+      @media (max-width: 991.98px) {
+        font-size: 12px;
+        white-space: nowrap;
+      }
     }
   }
 }

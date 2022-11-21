@@ -8,7 +8,11 @@
   background-color: transparent;
   display: flex;
   align-items: center;
+  z-index: 5;
   transition: all 0.5s ease-in-out;
+  @media (max-width: 767.98px) {
+    right: 0;
+  }
 
   .input-search-wrap {
     height: 57px;
@@ -98,10 +102,17 @@
 
   &.active {
     background-color: #556585;
+    @media (max-width: 767.98px) {
+      right: -20px;
+      width: calc(100% + 40px);
+      // position: absolute;
+    }
     .input-search-wrap {
       width: 500px;
-      // border-bottom: 1px solid #fff;
       transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
     }
     .search-close {
       opacity: 1;
@@ -127,6 +138,10 @@
   visibility: hidden;
   z-index: 10;
   transition: height .5s cubic-bezier(0, 0.11, 0.35, 2), opacity .25s ease-in-out, padding .25s ease-in-out;
+  @media (max-width: 767.98px) {
+    width: 100%;
+    top: 80px;
+  }
 
   &::-webkit-scrollbar-thumb {
     background-color: #556585;

@@ -78,6 +78,12 @@ p {
   }
 }
 
+@media (max-width: 767.98px) {
+  input {
+    font-size: 16px !important;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -286,3 +292,4 @@ section {
     }
   }
 }
+

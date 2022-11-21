@@ -1,9 +1,13 @@
 // custom dropdown
-.dropdown {
+.langSwitcher {
   position: relative;
   width: 100px;
   display: block;
   text-transform: uppercase;
+  @media (max-width: 767.98px) {
+    margin-right: 62px;
+  }
+
   .selected {
     display: flex;
     justify-content: space-between;
