@@ -17,7 +17,6 @@ const search = () => {
     }
   };
 
-
   btnSearch.addEventListener('click', () => {
     toggleSearch();
   });
@@ -37,6 +36,7 @@ const search = () => {
       // escape key maps to keycode `27`
       boxSearch.classList.remove('active');
       inputSearch.blur();
+      inputSearch.value = '';
       resultSearch.classList.remove('active');
       pageBody.classList.remove('openSearchResult');
     }
