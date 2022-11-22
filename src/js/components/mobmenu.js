@@ -3,10 +3,10 @@ import Mmenu from '../../../node_modules/mmenu-js/src/mmenu';
 const mobileMenu = () => {
   const button = document.querySelector('.burger-btn');
   const mMenu = new Mmenu('#mobmenu', {
+    theme: 'white',
     offCanvas: {
       position: 'top',
     },
-    theme: 'white',
     navbar: {
       title: 'Menu',
     },
@@ -29,7 +29,6 @@ const mobileMenu = () => {
   // button.addEventListener('click', () => {
   //   button.classList.toggle('active');
   // });
-
 };
 
 export default mobileMenu;

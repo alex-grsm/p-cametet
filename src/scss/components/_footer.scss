@@ -1,12 +1,22 @@
 .footer {
   background-color: #fff;
   padding: 0 80px;
+  @media (max-width: 1199.98px) {
+    padding: 0;
+  }
+  @media (max-width: 767.98px) {
+    padding-bottom: 15px;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1920px;
     min-height: 80px;
+    @media (max-width: 767.98px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
   }
 
   &__box {
@@ -15,9 +25,18 @@
     .copyright {
       margin-left: 15px;
     }
+    @media (max-width: 767.98px) {
+      .image {
+        width: 154px;
+        height: 40px;
+      }
+    }
   }
 
   &__scrollup {
+    @media (max-width: 767.98px) {
+      padding: 20px 0;
+    }
   }
 
   .copyright {

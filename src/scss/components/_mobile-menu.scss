@@ -3,6 +3,9 @@
   .mm-navbar {
     background-color: var(--blue-color);
     min-height: 80px;
+    .mm-btn--prev:before {
+      border-color: #fff;
+    }
   }
   .mm-navbars--top {
     .mm-navbar {
@@ -39,8 +42,22 @@
       display: none;
     }
   }
+
+  .mm-btn--next:after,
   .mm-btn--prev:before {
-    border-color: #fff;
+    border-color: var(--blue-color);
+  }
+
+  .mm-listitem {
+    border-color: lighten(#46587A, 25%)
+  }
+  .mm-listitem__text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .mm-panel:after {
+    display: none;
   }
 }
 

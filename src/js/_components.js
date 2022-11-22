@@ -11,9 +11,6 @@ import mobileMenu from './components/mobmenu';
 import './components/validation';
 import './components/modals';
 
-
-
-
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
 

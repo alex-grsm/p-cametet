@@ -4,12 +4,23 @@
   // min-height: 1450px;
   padding-top: calc(230px + 240px);
   padding-bottom: 350px;
+
   @media (max-width: 2480px) {
     padding-top: calc(230px + 220px);
+    padding-bottom: 330px;
   }
   @media (max-width: 1920px) {
     padding-top: calc(230px + 185px);
+    padding-bottom: 295px;
     background-image: url('../img/contact-bg-1920.jpg');
+  }
+  @media (max-width: 991.98px) {
+    padding-top: calc(230px + 142px);
+    padding-bottom: 262px;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: calc(230px + 132px);
+    padding-bottom: 252px;
   }
 
   &:before,
@@ -27,6 +38,12 @@
     @media (max-width: 1920px) {
       height: 185px;
     }
+    @media (max-width: 991.98px) {
+      height: 142px;
+    }
+    @media (max-width: 767.98px) {
+      height: 132px;
+    }
   }
   &:before {
     top: 0;
@@ -34,12 +51,24 @@
     @media (max-width: 1920px) {
       background-image: url('../img/contact-bg-top-1920.webp');
     }
+    @media (max-width: 991.98px) {
+      background-image: url('../img/contact-bg-top-991.webp');
+    }
+    @media (max-width: 767.98px) {
+      background-image: url('../img/contact-bg-top-767.webp');
+    }
   }
   &:after {
     bottom: 0;
     background-image: url('../img/contact-bg-bottom.webp');
     @media (max-width: 1920px) {
       background-image: url('../img/contact-bg-bottom-1920.webp');
+    }
+    @media (max-width: 991.98px) {
+      background-image: url('../img/contact-bg-bottom-991.webp');
+    }
+    @media (max-width: 767.98px) {
+      background-image: url('../img/contact-bg-bottom-767.webp');
     }
   }
 
@@ -70,6 +99,9 @@
 
   &__form {
     padding-right: 90px;
+    @media (max-width: 767.98px) {
+      padding-right: 0;
+    }
     .form-label {
       display: flex;
       align-items: center;
@@ -77,6 +109,9 @@
       position: relative;
       position: relative;
       @include mb(30px);
+      @media (max-width: 767.98px) {
+        flex-direction: column;
+      }
       span {
         color: #fff;
         font-size: 18px;
@@ -84,15 +119,29 @@
         width: 50%;
         text-align: right;
         padding-right: 15px;
+        @media (max-width: 767.98px) {
+          padding-right: 0;
+          width: 100%;
+          text-align: left;
+          color: #bdbdbd;
+          font-size: 16px;
+          padding-bottom: 8px;
+        }
       }
-      input {
+      input, textarea {
         width: 50%;
+        @media (max-width: 767.98px) {
+          width: 100%;
+        }
       }
     }
 
     .form-btn {
       width: 50%;
       margin-left: auto;
+      @media (max-width: 767.98px) {
+        margin-left: unset;
+      }
     }
   }
 }
@@ -120,4 +169,3 @@
   font-size: 14px;
   font-weight: 600;
 }
-

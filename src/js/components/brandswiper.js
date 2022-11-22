@@ -7,7 +7,7 @@ const brandSwiper = () => {
     grabCursor: true,
     speed: 5000,
     freeMode: true,
-    slidesPerView: 5,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     keyboard: {
@@ -18,6 +18,17 @@ const brandSwiper = () => {
       delay: 0,
       disableOnInteraction: false
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+      }
+    }
   });
 
 };

@@ -1,6 +1,6 @@
 const showMoreBtn = () => {
   try {
-    const showMore = document.querySelector('.show-more');
+    const showMore = document.querySelector('#more-products');
     const productsLength = document.querySelectorAll('.products-catalog__item').length;
     let items = 12;
 

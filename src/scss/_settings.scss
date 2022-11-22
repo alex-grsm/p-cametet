@@ -264,6 +264,9 @@ section {
     background-repeat: no-repeat;
     background-image: url('../img/bg.webp');
     background-position: center top;
+    @media (max-width: 767.98px) {
+      top: -30rem;
+    }
   }
   &:after {
     content: '';

@@ -1,5 +1,16 @@
 .history {
   margin-bottom: 80px;
+  @media (max-width: 767.98px) {
+    margin-bottom: 64px;
+    .hero__ultimate {
+      position: unset;
+      transform: unset;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 64px;
+    }
+  }
+
   &__container {
     max-width: 880px;
   }
