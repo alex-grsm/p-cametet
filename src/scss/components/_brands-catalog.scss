@@ -29,6 +29,7 @@
     @media (max-width: 575.98px) {
       grid-column: 12 span;
       max-width: 294px;
+      min-width: 294px;
       margin: auto;
     }
 
@@ -44,6 +45,7 @@
       .image {
         min-height: 214px;
         width: 100%;
+        margin: auto;
       }
     }
 

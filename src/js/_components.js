@@ -8,6 +8,7 @@ import brandSwiper from './components/brandswiper';
 import scrolling from './components/scrolling';
 import showMoreBtn from './components/show-more';
 import mobileMenu from './components/mobmenu';
+import breadCrumbs from './components/breadcrumbs';
 import './components/validation';
 import './components/modals';
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   scrolling('.pageup');
   showMoreBtn();
   mobileMenu();
+  breadCrumbs();
 
   /** Current year */
   document.querySelector('#year').innerHTML = new Date().getFullYear();
