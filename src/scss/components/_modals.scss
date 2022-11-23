@@ -2,6 +2,9 @@
   background-color: rgba(70, 88, 122, 0.7);
   .graph-modal__container {
     padding: 32px;
+    @media (max-width: 767.98px) {
+      padding: 16px;
+    }
   }
 
   .graph-modal__close {
@@ -11,11 +14,29 @@
     background-repeat: no-repeat;
     width: 14px;
     height: 14px;
+    @media (max-width: 767.98px) {
+      right: 16px;
+      top: 16px;
+    }
   }
 
   .contact__head {
-    .h2, .h-sub {
+    .h2,
+    .h-sub {
       color: var(--blue-color);
+    }
+    @media (max-width: 575.98px) {
+      .h2 {
+        white-space: nowrap;
+        font-size: 19px;
+        .image {
+          max-width: 40px;
+        }
+      }
+      .h-sub {
+        font-size: 13px;
+        padding-left: 56px;
+      }
     }
   }
 
@@ -25,7 +46,7 @@
 
   .input {
     border-color: var(--blue-color);
-    color: var(--blue-color);;
+    color: var(--blue-color);
     &::placeholder {
       color: var(--blue-color);
     }

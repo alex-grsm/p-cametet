@@ -12,6 +12,8 @@
   transition: all 0.5s ease-in-out;
   @media (max-width: 767.98px) {
     right: 0;
+    width: 100%;
+    pointer-events: none;
   }
 
   .input-search-wrap {
@@ -44,6 +46,8 @@
     transform: scale(1.5);
     opacity: 1;
     transition: all 0.25s ease-in-out;
+    min-width: 45px;
+    min-height: 45px;
   }
 
   .search-close {
@@ -102,6 +106,7 @@
 
   &.active {
     background-color: #556585;
+    pointer-events: unset;
     @media (max-width: 767.98px) {
       right: -20px;
       width: calc(100% + 40px);

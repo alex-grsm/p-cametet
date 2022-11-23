@@ -2,7 +2,11 @@
   margin-bottom: 80px;
   @media (max-width: 767.98px) {
     margin-bottom: 64px;
-    .hero__ultimate {
+  }
+
+  .hero__ultimate {
+    display: none;
+    @media (max-width: 767.98px) {
       position: unset;
       transform: unset;
       margin-left: auto;
